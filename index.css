@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+button {
+    color: black;
+    font-weight: 500;
+    background-color: white;
+    width: fit-content;
+    font-size: large;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid black;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: blueviolet;
+    transform: scale(1.1);
+    border-radius: 15px;
+    color: white;
+}
+textarea, input {
+    color: black;
+    font-weight: 100;
+    background-color: white;
+    width: fit-content;
+    /* font-size: large; */
+    padding: 10px;
+    border-radius: 10px;
+    border: 0px solid white;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blueviolet;
+    padding: 10px;
+}
+header nav {
+    display: flex;
+    gap: 1dvw;
+}
+header a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+header a:hover {
+    text-decoration: underline;
+}
+header nav a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10dvw;
+}
+.center {
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    justify-content: center;
+    align-items: center;
+}
+.center h1 {
+    text-align: center;
+}

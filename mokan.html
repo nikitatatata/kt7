@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .center {
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/"><h1>Multigen</h1></a>
+        <!-- <nav>
+            <h2><a href="#home">Главная</a></h2>
+            <h2><a href="#about">О нас</a></h2>
+            <h2><a href="#services">Услуги</a></h2>
+            <h2><a href="#contact">Контакты</a></h2>
+        </nav> -->
+    </header>
+
+    <main>
+        <div class="center">
+            <h1>Генератор удачи относиельно макана</h1>
+            <div class="inputs">
+                <span>Список маканов</span> <textarea id="mokanList" cols="10" rows="20"></textarea>
+            </div>
+            <h1 id="luck">Удача по макану</h1>
+            <button id="generateBtn" onclick="genMokans()">Генерировать</button>
+        </div>
+    </main>
+
+    <script src="mokan.js"></script>
+</body>
+</html>

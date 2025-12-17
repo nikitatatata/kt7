@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .inputs {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/"><h1>Multigen</h1></a>
+        <!-- <nav>
+            <h2><a href="#home">Главная</a></h2>
+            <h2><a href="#about">О нас</a></h2>
+            <h2><a href="#services">Услуги</a></h2>
+            <h2><a href="#contact">Контакты</a></h2>
+        </nav> -->
+    </header>
+
+    <main>
+        <div class="center">
+            <h1>Генератор рандомных последовательностей</h1>
+            <div class="inputs">
+                <span>Генерируем из </span> <textarea id="charsToUse" cols="60" rows="1">1234567890qwertyuioplkjhgfdsazxcvbnm!@#$%^&*()_+-</textarea>
+            </div>
+            <div class="inputs">
+                <span>Длинна </span> <input id="generatedLength" type="number" value="10">
+            </div>
+            <textarea id="genResult"></textarea>
+            <button id="generateBtn" onclick="genChars()">Генерировать</button>
+        </div>
+    </main>
+    <script src="chargen.js"></script>
+</body>
+</html>

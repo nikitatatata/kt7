@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multigen</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+        <a href="/"><h1>Multigen</h1></a>
+    </header>
+    
+    <main>
+        <div class="center">
+            <h1>Угадай число от 0 до 10</h1>
+            <input type="number" id="firstNum">
+            <button onclick="checkResult()">Проверить</button>
+            <h1 id="result"></h1>
+        </div>
+    </main>
+    <script>
+        const numElement = document.getElementById('firstNum')
+        const result = document.getElementById('result')
+        // result.innerText = "qweeqw"
+
+        function checkResult() {
+            let randomNum = Math.round(Math.random() * 10)
+            console.log(randomNum);
+            console.log(numElement.value);
+            
+            if (randomNum == numElement.value) {
+                result.innerText = "Да"
+                result.style.color = "#00ff00"
+            }
+            else {
+                result.innerText = "Нет " + randomNum
+                result.style.color = "#ff0000"
+            }
+            
+            
+        }
+    </script>
+</body>
+</html>
